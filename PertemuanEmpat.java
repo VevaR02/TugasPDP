@@ -62,53 +62,61 @@ public class PertemuanEmpat {
 
         System.out.println("=============Soal 3============");
 
-        System.out.println("=============Persegi============");
+        System.out.println("Pilih : 1. Persegi; 2. Segitiga; 3. Lingkaran");
 
-        int s;
-        System.out.println("Masukkan Nilai s:");
-        s = in.nextInt();
-        double luaspersegi = (s * s);
-        System.out.println("Menghitung Luas Persegi...");
+        int pilihbangun = in.nextInt();
 
-        if (luaspersegi > 0){
-            System.out.println("Luas Persegi = " + luaspersegi + " cm^2");
-        }
-        else{
-            System.out.println("Error");
-        }
-        
+        if (pilihbangun==1) {
+            int s;
+            System.out.println("Masukkan Nilai s:");
+            s = in.nextInt();
+            double luaspersegi = (s * s);
+            System.out.println("Menghitung Luas Persegi...");
 
-        System.out.println("=============Segitiga============");
-
-        int a;
-        int t;
-        System.out.println("Masukkan Nilai a:");
-        a = in.nextInt();
-        System.out.println("Masukkan Nilai t:");
-        t = in.nextInt();
-        double luassegitigiga = (0.5 * a * t);
-
-        System.out.println("Menghitung Luas Segitiga...");
-
-        if (luassegitigiga > 0){
-            System.out.println("Luas Segitiga = " + luassegitigiga + " cm^2");
-        }
-        else{
-            System.out.println("Error");
+            if (luaspersegi > 0){
+                System.out.println("Luas Persegi = " + luaspersegi + " cm^2");
+            }
+            else{
+                System.out.println("Error");
+            }
         }
 
-        System.out.println("=============Lingkaran============");
+            
+        else if (pilihbangun==2){
+            int a;
+            int t;
+            System.out.println("Masukkan Nilai a:");
+            a = in.nextInt();
+            System.out.println("Masukkan Nilai t:");
+            t = in.nextInt();
+            double luassegitigiga = (0.5 * a * t);
 
-        int r;
-        System.out.println("Masukkan Nilai r:");
-        r = in.nextInt();
-        double luaslingkaran = (3.14 * r * r);
-        System.out.println("Menghitung Luas Lingkaran...");
+            System.out.println("Menghitung Luas Segitiga...");
 
-        if (luaslingkaran > 0){
-            System.out.println("Luas Lingkaran = " + luaslingkaran + " cm^2");
+            if (luassegitigiga > 0){
+                System.out.println("Luas Segitiga = " + luassegitigiga + " cm^2");
+            }
+            else{
+                System.out.println("Error");
+            }
         }
-        else{
+
+            
+            else if (pilihbangun==3){
+            int r;
+            System.out.println("Masukkan Nilai r:");
+            r = in.nextInt();
+            double luaslingkaran = (3.14 * r * r);
+            System.out.println("Menghitung Luas Lingkaran...");
+
+            if (luaslingkaran > 0){
+                System.out.println("Luas Lingkaran = " + luaslingkaran + " cm^2");
+            }
+            else{
+                System.out.println("Error");
+            }
+        }
+        else {
             System.out.println("Error");
         }
     }
